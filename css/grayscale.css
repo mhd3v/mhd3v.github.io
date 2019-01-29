@@ -4,6 +4,17 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
 
+
+.skill {
+  font-size: 10px;
+  font-weight: bold;
+  padding:7px;
+  border-radius: 8px;
+  border: 1px solid #64a19d;
+  display: inline-block;
+  margin-top: 4px;
+}
+
 #mainNav {
   min-height: 56px;
   background-color: #fff;

@@ -1,6 +1,8 @@
 (function($) {
   "use strict"; // Start of use strict
 
+  var daysTillEnd = Math.round((new Date("2019-06-12").getTime() - (new Date).getTime()) / 864e5), currentProgress = (100 - daysTillEnd / 1375 * 100).toFixed(2); 
+  currentProgress <= 100 && $("#currentProgress").text(currentProgress + "% "); 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
