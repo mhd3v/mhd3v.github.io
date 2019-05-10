@@ -10,7 +10,7 @@
   font-weight: bold;
   padding:7px;
   border-radius: 8px;
-  border: 1px solid #64a19d;
+  border: 1px solid #345a92;
   display: inline-block;
   margin-top: 4px;
 }
@@ -41,8 +41,8 @@
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
+  color: #345a92;
+  border: 1px solid #345a92;
 }
 
 #mainNav .navbar-toggler:focus {
@@ -103,15 +103,15 @@
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
+    color: #345a92;
   }
   #mainNav.navbar-shrink .nav-link:active {
     color: #467370;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color: #345a92;
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid #345a92;
   }
 }
 
@@ -179,15 +179,15 @@
 }
 
 .btn-primary {
-  background-color: #64a19d;
+  background-color: #345a92;
 }
 
 .btn-primary:hover {
-  background-color: #4f837f;
+  background-color: #4c6891;
 }
 
 .btn-primary:focus {
-  background-color: #4f837f;
+  background-color: #4c6891;
   color: white;
 }
 
@@ -216,7 +216,7 @@
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
+    border-left: 0.5rem solid #345a92;
   }
 }
 
@@ -230,7 +230,7 @@
     padding: 5rem;
   }
   .projects-section .project-text hr {
-    border-color: #64a19d;
+    border-color: #345a92;
     border-width: .25rem;
     width: 30%;
   }
@@ -264,7 +264,7 @@
 
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #64a19d;
+  border-bottom: 0.25rem solid #345a92;
 }
 
 .contact-section .card h4 {
@@ -275,7 +275,7 @@
 }
 
 .contact-section .card hr {
-  border-color: #64a19d;
+  border-color: #345a92;
   border-width: 0.25rem;
   width: 3rem;
 }
@@ -308,7 +308,7 @@ body {
 }
 
 a {
-  color: #64a19d;
+  color: #345a92;
 }
 
 a:focus, a:hover {
@@ -321,11 +321,11 @@ a:focus, a:hover {
 }
 
 .bg-primary {
-  background-color: #64a19d !important;
+  background-color: #4c6891 !important;
 }
 
 .text-primary {
-  color: #64a19d !important;
+  color: #546d92 !important;
 }
 
 footer {
