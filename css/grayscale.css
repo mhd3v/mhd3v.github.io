@@ -10,7 +10,7 @@
   font-weight: bold;
   padding:7px;
   border-radius: 8px;
-  border: 1px solid #345a92;
+  border: 1px solid #066CBB;
   display: inline-block;
   margin-top: 4px;
 }
@@ -313,7 +313,7 @@ a {
 
 a:focus, a:hover {
   text-decoration: none;
-  color: #3c6360;
+  color: #066CBB;
 }
 
 .bg-black {
