@@ -1,7 +1,12 @@
-const startDate = moment([2020, 3, 1]);
-const years = moment().diff(startDate, 'year');
-const months = moment().diff(startDate.add(years, 'years'), 'months');
+function getYearMonthDiffInText(date1, date2) {
+    const years = date1.diff(date2, 'year');
+    date2.add(years, 'years');
+    const months = date1.diff(date2, 'months');
+    date2.add(months, 'months');
+    let diff = years >= 1 ? `${years} year${years > 1 ? 's' : ''} ` : '';
+    diff += months > 1 ? `${months} months`: '1 month';
+    return diff;
+}
 
-let currentExpString = `(${years} year${years > 1 ? 's' : ''}`
-currentExpString += months > 0 ? ` ${months} months)`: ')';
-document.getElementById("current-work-exp").innerHTML = currentExpString;
+document.getElementById("current-work-exp").innerHTML = getYearMonthDiffInText(moment(), moment("20220101", "YYYYMMDD"));
+document.getElementById("overall-work-exp").innerHTML = getYearMonthDiffInText(moment(), moment("20190801", "YYYYMMDD"));
