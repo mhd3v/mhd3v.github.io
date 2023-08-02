@@ -8,5 +8,5 @@ function getYearMonthDiffInText(date1, date2) {
     return diff;
 }
 
-// document.getElementById("current-work-exp").innerHTML = getYearMonthDiffInText(moment(), moment("20220901", "YYYYMMDD"));
+document.getElementById("current-work-exp").innerHTML = getYearMonthDiffInText(moment(), moment("20230801", "YYYYMMDD"));
 document.getElementById("overall-work-exp").innerText = getYearMonthDiffInText(moment(), moment("20190801", "YYYYMMDD"));
