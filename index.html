@@ -87,7 +87,7 @@
         <div class="col-lg-8 mx-auto">
           <h2 class="text-white mb-4">Introduction</h2>
           <p class="text-white-50 mb-5">Hello, world! 👋</p>
-          <p class="text-white-50 mb-5"> I'm Mahad - currently working as a Software Engineer at Meta, London.</p>
+          <p class="text-white-50 mb-5"> I'm Mahad - currently working as a Senior Software Engineer at Nelly Solutions, Berlin.</p>
           <p class="text-white-50 mb-5">
             At core, I am a Computer Scientist with a diverse work experience spanning multiple industries, cloud and
             consulting. I have an extensive knowledge of the software development cycle as well as
@@ -122,15 +122,60 @@
       <hr>
 
       <div class="mb-4">
-        <a href="https://www.meta.com" target="_blank"><b>Meta</b></a>
+        <a href="https://www.getnelly.de/" target="_blank"><b>Nelly Solutions</b></a>
         <span class="float-right">
           <i>
-            Sep. 2024 - present <b>(<span id="current-work-exp"></span>)</b>
+            Oct. 2025 - present <b>(<span id="current-work-exp"></span>)</b>
           </i>
         </span>
         <br>
-        <b>Software Engineer (Backend)</b><span class="float-right"><i>LDN, UK</i></span>
+        <b>Senior Software Engineer</b><span class="float-right"><i>BLN, DE</i></span>
         <br>
+        <ul>
+          <li>Migrated patient creation (70K+/week) from monolith to microservice with zero downtime; centralized logic and appointment-proximity matching cut duplication by 40%+.</li>
+          <li>Built an LLM-powered incident triage agent with tool calling and cross-repository retrieval; delivered investigations in &lt; 3 minutes p95, saving an estimated 50+ engineering hours/week.</li>
+          <li>Architected consent-gated extraction pipelines across 50+ practices, implementing keyed-hash pseudonymization and deploying a German NER transformer via spaCy for PII redaction, enabling AI training and analytics.</li>
+          <li>Cut annual AWS Glue costs by $35K+ by identifying redundant Iceberg optimization across 700+ tables and restricting optimizer execution to query-critical tables.</li>
+        </ul>
+        <span class="skill">System Design</span>
+        <span class="skill">AWS</span>
+        <span class="skill">TypeScript</span>
+        <span class="skill">Python</span>
+        <span class="skill">LLM Agents</span>
+        <span class="skill">spaCy</span>
+        <span class="skill">Iceberg</span>
+        <span class="skill">Glue</span>
+        <span class="skill">Microservices</span>
+        <span class="skill">PostgreSQL</span>
+        <span class="skill">Kafka</span>
+        <span class="skill">Datadog</span>
+        <span class="skill">Sentry</span>
+        <span class="skill">GitHub Actions</span>
+      </div>
+
+      <div class="mb-4">
+        <a href="https://www.meta.com" target="_blank"><b>Meta</b></a>
+        <span class="float-right">
+          <i>
+            Sep. 2024 - Oct. 2025 <b>(1 year 1 month)</b>
+          </i>
+        </span>
+        <br>
+        <b>Software Engineer (Monetization)</b><span class="float-right"><i>LDN, UK</i></span>
+        <br>
+        <ul>
+          <li>Designed catalog parity infrastructure comparing ingested data against seller sources, orchestrating sampling, extraction, retries, scoring, and aggregation to surface data-quality gaps.</li>
+          <li>Scaled LLM-as-judge assessment across 100K+ catalogs, reducing annualized labeling costs by an estimated $15M+ while retaining human review for high-value catalogs.</li>
+          <li>Established attribute-level benchmarks with human annotators and iterated on judge prompts, achieving &gt; 80% precision and recall from baselines below 50% for some attributes.</li>
+          <li>Partnered with ad-ranking teams to identify and evaluate candidate ranking signals, surfacing a potential +0.07% Meta revenue uplift through offline evaluation.</li>
+          <li>Led engineering efficiency initiatives delivering an estimated 1.25 engineering-years of savings, including self-service pipeline onboarding that eliminated manual configuration across multiple repositories.</li>
+        </ul>
+        <span class="skill">LLM-as-Judge</span>
+        <span class="skill">Python</span>
+        <span class="skill">Data Pipelines</span>
+        <span class="skill">Evaluation</span>
+        <span class="skill">Ads Ranking</span>
+        <span class="skill">Feature Pipelines</span>
       </div>
 
       <div class="mb-4">
@@ -145,12 +190,10 @@
             DE</i></span>
         <br>
         <ul>
-          <li>Led setup for a high-performance banking decisioning variables service, handling 2K+ requests per second
-            with an SLA adherence under 300 ms.</li>
-          <li>Designed a data transformation pipeline for deposit data, supporting regulatory reporting with 10M+
-            records spanning 6 years.</li>
-          <li>Setup export pipeline for 100K+ daily transactions from decisioning space to be ingested by reporting
-            flows.</li>
+          <li>Designed and built a low-latency variable-serving service (10K+ RPS, &lt; 100 ms) powering real-time risk decisioning policies in user-facing credit flows.</li>
+          <li>Led CESOP regulatory compliance: aligned reporting scope with legal and stakeholders, and built ingestion covering non-EU card and SEPA transactions for millions of users across EU markets.</li>
+          <li>Developed an export pipeline surfacing DynamoDB-backed variable data (50K+ daily transactions) for downstream risk assessment and reporting flows.</li>
+          <li>Built an ETL pipeline for extraction of 10M+ historical financial transactions spanning 6 years, unblocking downstream regulatory reporting workflows.</li>
         </ul>
         <span class="skill">System Design</span>
         <span class="skill">AWS</span>
@@ -201,18 +244,9 @@
         <br>
 
         <ul>
-          <li>Led design and implementation of algorithm for smart EV charging, a flagship feature crucial for securing
-            Series-A funding of 9M+ USD.</li>
-          <li>Established a Data Science service to expedite data migrations, resulting in a 20% acceleration in
-            development of Tableau dashboards and Data Science processes.</li>
-          <li>Optimized test pipeline through sharding, caching, and parallelization, reducing runtime from 13 to 8
-            mins.</li>
-          <li>Implemented backend for dynamic pricing engine that calculates customized tariffs based on daily
-            consumption from smart meters, and real-time electricity spot prices.</li>
-          <li>Achieved a 40% increase in coverage and successfully reduced 50+ code smells, surpassing tech KPIs for
-            2022.</li>
-          <li>Implemented pricing engine for customized tariffs based on consumption from smart meters and real-time
-            electricity spot prices, positioned as the primary USP.</li>
+          <li>Designed an EV smart-charging optimization algorithm that schedules charging windows against day-ahead spot electricity prices, minimizing charging costs for dynamic tariff users.</li>
+          <li>Productionized a dynamic pricing engine aggregating smart-meter consumption against hourly spot prices to compute user billing, enabling monetization of Ostrom’s flagship SimplyDynamic tariff.</li>
+          <li>Implemented failover and retry mechanisms across core APIs to absorb upstream provider outages, cutting customer support requests by 5%+.</li>
         </ul>
         <span class="skill">System Design</span>
         <span class="skill">AWS</span>
@@ -533,7 +567,7 @@
               <i class="fas fa-map-marked-alt text-primary mb-2"></i>
               <h4 class="text-uppercase m-0">Location</h4>
               <hr class="my-4">
-              <div class="small text-black-50">London, UK</div>
+              <div class="small text-black-50">Berlin, Germany</div>
             </div>
           </div>
         </div>
